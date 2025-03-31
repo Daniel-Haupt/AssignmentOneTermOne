@@ -50,31 +50,28 @@ class MainActivity : AppCompatActivity() {
 
             }else if (userTimeOfDay.text.toString().lowercase() == "mid-morning") {
                 timesOfDay.text = " "
-                mealSuggestion.text =
-                    "Brunch Options: \nFrench Toast \nCheese and Ham Sandwich \nAvocado on Toast " +
-                            "\nFruit Salad \nCake and Tea"
+                mealSuggestion.text = "Brunch Options: \nFrench Toast \nCheese and Ham Sandwich \nAvocado on Toast \nFruit Salad \nCake and Tea"
 
             } else if (userTimeOfDay.text.toString().lowercase() == "afternoon") {
                             timesOfDay.text = " "
-                            mealSuggestion.text =
-                                "Lunch Options: \nGrilled Cheese Sandwich \nBurger and Chips \nHot-dogs " +
-                                        "\nChicken and Avocado Salad \nBeef Wrap."
+                            mealSuggestion.text = "Lunch Options: \nGrilled Cheese Sandwich \nBurger and Chips \nHot-dogs \nChicken and Avocado Salad \nBeef Wrap."
 
             }else if (userTimeOfDay.text.toString().lowercase() == "mid-afternoon") {
                             timesOfDay.text = " "
-                            mealSuggestion.text = "Afternoon-snack Options: \nMicrowave-Muffins " +
-                                    "\nPeanut Butter Bars \nApple chips \nPop-corn \nChip-Roll"
+                            mealSuggestion.text = "Afternoon-snack Options: \nMicrowave-Muffins \nPeanut Butter Bars \nApple chips \nPop-corn \nChip-Roll"
 
             } else if (userTimeOfDay.text.toString().lowercase() == "dinner") {
                 timesOfDay.text = " "
-                mealSuggestion.text = "Dinner Options:\nLasagna \nButter Chicken Curry \nPasta and Meatballs  " +
-                        "\nPizza  \nSteak with Potatoes and Gravy"
+                mealSuggestion.text = "Dinner Options:\nLasagna \nButter Chicken Curry \nPasta and Meatballs \nPizza \nSteak with Potatoes and Gravy"
+
+            }    else if (userTimeOfDay.text.toString().lowercase() == "late-night") {
+                    timesOfDay.text = " "
+                    mealSuggestion.text = "Late-Snack Options:\n Ice-cream \nMicrowave Cake \nChocolate pudding \nCustard \n Hot Chocolate"
 
             } else {
-                timesOfDay.text = " "
-                mealSuggestion.text = "Invalid input. Numbers, special characters and misspelled words are not " +
-                        "allowed.\nPlease enter a valid time of day." +
-                        "\nFor example: \nMorning \nMid-morning \nAfternoon \nMid-afternoon \nDinner"
+            timesOfDay.text = " "
+            mealSuggestion.text = "Invalid input.\nNumbers, special characters and misspelled words are not allowed.\nPlease enter a valid time of day." +
+                    "\nFor example: \nMorning \nMid-morning \nAfternoon \nMid-afternoon \nDinner \nLate-night"
 }
 }
     }
