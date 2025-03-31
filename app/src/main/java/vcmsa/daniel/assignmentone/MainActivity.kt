@@ -54,21 +54,9 @@ class MainActivity : AppCompatActivity() {
     timesOfDay.text = " "
     mealSuggestion.text = "Invalid input.\nPlease enter a valid time of day." +
             "\nFor example: \nMorning \nMid-morning \nAfternoon \nMid-afternoon \nDinner"
-
-
-
 }
-
-
 }
-
-
-
-
-
-        }
-
-
+    }
     }
 
 
