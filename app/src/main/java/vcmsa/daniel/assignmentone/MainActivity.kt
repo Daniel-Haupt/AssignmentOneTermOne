@@ -63,7 +63,7 @@ class MainActivity : AppCompatActivity() {
             }else if (userTimeOfDay.text.toString().lowercase() == "mid-afternoon") {
                             timesOfDay.text = " "
                             mealSuggestion.text = "Afternoon-snack Options: \nMicrowave-Muffins " +
-                                    "\nPeanut Butter Bars \nApple chips \nPop-corn \n"
+                                    "\nPeanut Butter Bars \nApple chips \nPop-corn \nChip-Roll"
 
             } else if (userTimeOfDay.text.toString().lowercase() == "dinner") {
                 timesOfDay.text = " "
