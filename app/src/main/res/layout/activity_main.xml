@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/foodImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="1500dp"
+        android:layout_height="1000dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/foodimagebackground" />
+
+    <TextView
+        android:id="@+id/mealSuggestion"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:textColor="#070707"
+        android:textColorHint="#020202"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userTimeOfDay"
+        android:layout_width="370dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Enter your time of day"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nextStep"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Continue"
+        android:textAlignment="center"
+        android:textColor="#0F0E0E"
+        android:textColorHint="#FDFCFC"
+        android:textColorLink="#CEA766"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealSuggestion"
+        app:rippleColor="#B87C7C" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="111dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="10dp"
+        android:text="Reset"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nextStep" />
+
+    <TextView
+        android:id="@+id/timesOfDay"
+        android:layout_width="345dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:hint="For example : &quot;Morning, Mid-morning, Afternoon, Mid-afternoon or Dinner&quot;"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textColorHint="#020202"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/mealSuggestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userTimeOfDay"
+        app:layout_constraintVertical_bias="0.531" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
