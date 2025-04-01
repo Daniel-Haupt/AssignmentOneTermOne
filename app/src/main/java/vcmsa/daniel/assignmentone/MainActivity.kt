@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         resetButton.setOnClickListener {
             userTimeOfDay.text.clear()
             mealSuggestion.text = ""
-            timesOfDay.text = "For example : Morning, Mid-morning, Afternoon, Mid-afternoon or Dinner"
+            timesOfDay.text = "For example : Morning, Mid-morning, Afternoon, Mid-afternoon, Dinner or Late-night"
         }
         // Button that checks the users input and matches it with the if statements.
         // It then converts user input to lowercase to make it case insensitive.
