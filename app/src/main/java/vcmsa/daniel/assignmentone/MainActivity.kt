@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
             }    else if (userTimeOfDay.text.toString().lowercase() == "late-night") {
                     timesOfDay.text = " "
-                    mealSuggestion.text = "Late-Snack Options:\n Ice-cream \nMicrowave Cake \nChocolate pudding \nCustard \n Hot Chocolate"
+                    mealSuggestion.text = "Late-Snack Options: \nIce-cream \nMicrowave Cake \nChocolate pudding \nCustard \nHot Chocolate"
 
             } else {
             timesOfDay.text = " "
